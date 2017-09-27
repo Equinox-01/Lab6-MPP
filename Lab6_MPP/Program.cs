@@ -13,7 +13,10 @@ namespace Lab6_MPP
             list_item.Add(new Student("Пётр", 19, 3, "КСиС", "ПОИТ", false));
             var uasya = new Student("Уася", 17, 1, "ФРЭ", "МНЭТиС", true);
             list_item.Add(uasya);
-
+            foreach (var tmp in list_item)
+            {
+                Console.WriteLine(tmp.GetInfo());
+            }
             try
             {
                 Console.WriteLine("Сейчас в DynamicList находится " + list_item.Count + " элементов.");
