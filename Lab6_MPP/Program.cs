@@ -21,10 +21,8 @@ namespace Lab6_MPP
                 Console.WriteLine("Cейчас в DynamicList находится " + list_item.Count + " элементов.");
                 list_item.RemoveAt(1);
                 Console.WriteLine("Cейчас в DynamicList находится " + list_item.Count + " элементов.\n");
-                Console.WriteLine(list_item.Items[0].GetInfo());
                 list_item.Clear();
                 Console.WriteLine("Cейчас в DynamicList находится " + list_item.Count + " элементов.");
-                list_item.Remove(null);
             }
             catch (Exception e)
             {
